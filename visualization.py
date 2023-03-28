@@ -8,3 +8,7 @@ def compare_of_two_attribute(data , title, x, hue = None):
     plt.figure(figsize=(6,6))
     plt.title(title)
     sns.countplot(data = data, x = x, hue = hue)
+
+def show_heatmap(data):
+    sns.heatmap(data.corr())
+    
